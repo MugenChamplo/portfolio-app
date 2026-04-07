@@ -35,4 +35,4 @@ jobs:
                 key: ${{ secrets.PRIVATE_KEY }}
                 script: |
                     docker rm -f portfolio || echo "Container not found, skipping removal."
-                    docker run -d --name portfolio -p 8086:80  docker push ${{secrets.DOCKER_USERNAME}}/ciportfolio
+                    docker run -d --name portfolio -p 8082:80  docker push ${{secrets.DOCKER_USERNAME}}/ciportfolio

@@ -7,9 +7,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: checkout code
-              uses: actions/checkput@v4
+              uses: actions/checkout@v4
             - name: Build image
               run: docker build -t stephen2012/ciportfolio .
             - name: List images
               run: docker images
-              
+

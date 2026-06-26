@@ -62,7 +62,7 @@ jobs:
           exit-code: '0'
           severity: CRITICAL,HIGH
 
-  deploy-to-ecs:
+  deploy-ecs:
     runs-on: ubuntu-latest
     needs: scan-image
 
